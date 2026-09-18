@@ -1,11 +1,16 @@
 from plantcv import plantcv as pcv 
 from plantcv.parallel import workflow_inputs
+import re
 
 # get arguments from job scheduler
 args = workflow_inputs()
 
 # read image as numpy array
 img, path, filename = pcv.readimage(filename=args.image1)
+
+hline = 1950
+if bool(re.search("_h0_", args.image1)):
+    hline = 2150
 
 # color card is in a consistent location so ROI for safety
 cc_roi = pcv.roi.rectangle(img, x = 1700, y = 2500, h = 500, w = 800)
@@ -33,7 +38,7 @@ shape_analysis_image = pcv.analyze.size(img=img_cc, labeled_mask=kept_mask)
 
 
 shape_boundary_image = pcv.analyze.bound_horizontal(img=img_cc,labeled_mask=kept_mask, 
-                                               line_position=1950, label="default")
+                                               line_position=2150, label="default")
 
 color_histogram = pcv.analyze.color(rgb_img=img_cc, labeled_mask=kept_mask, colorspaces='all', label="default")
 

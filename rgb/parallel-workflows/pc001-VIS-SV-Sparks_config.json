@@ -13,7 +13,7 @@
         "other",
         "cartag"
     ],
-    "workflow": "/data/phenotyping/users/kmurphy/2026-pc001-analysis/workflows/pc001-VIS-SV-h1-Sparks-workflow.py",
+    "workflow": "/data/phenotyping/users/kmurphy/2026-pc001-analysis/workflows/pc001-VIS-SV-Sparks-workflow.py",
     "img_outdir": "/data/phenotyping/users/kmurphy/2026-pc001-analysis/results-sparks/image_output",
     "include_all_subdirs": true,
     "tmp_dir": ".",
@@ -24,7 +24,7 @@
     "metadata_filters": {
         "imgtype": "VIS",
         "camera": "SV",
-        "lifter": "h1"
+        "lifter": "h0"
     },
     "timestampformat": "%Y-%m-%dT%H:%M:%S.%fZ",
     "writeimg": false,
@@ -35,7 +35,7 @@
     "append": false,
     "cluster": "HTCondorCluster",
     "cluster_config": {
-        "n_workers": 200,
+        "n_workers": 30,
         "cores": 1,
         "memory": "1GB",
 	"disk": "1GB",
