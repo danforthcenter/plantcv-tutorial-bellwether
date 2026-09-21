@@ -136,3 +136,13 @@ dmypy.json
 
 # macOS
 .DS_Store
+rgb/jupyter-notebooks/pc001-VIS-SV-Sparks.json
+rgb/jupyter-notebooks/pc001-VIS-SV-Sparks.py
+rgb/jupyter-notebooks/pc001-VIS-SV-Sparks_parallel_results
+rgb/jupyter-notebooks/pc001-VIS-SV-Sparks_parallel_results-multi-value-traits.csv
+rgb/jupyter-notebooks/pc001-VIS-SV-Sparks_parallel_results-single-value-traits.csv
+multispec/jupyter-notebooks/pc001-MS-SV-setaria-h0-all-LED_v2.json
+multispec/jupyter-notebooks/pc001-MS-SV-setaria-h0-all-LED_v2_parallel_results
+multispec/jupyter-notebooks/pc001-MS-SV-setaria-h0-all-LED_v2.py
+multispec/jupyter-notebooks/pc001-MS-SV-setaria-h0-all-LED_v2_parallel_results-multi-value-traits.csv
+multispec/jupyter-notebooks/pc001-MS-SV-setaria-h0-all-LED_v2_parallel_results-single-value-traits.csv
